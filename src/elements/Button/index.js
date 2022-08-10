@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export const Button = (props) => {
+export default function Button(props) {
   const className = [props.className];
   if (props.isPrimary) className.push('btn-primary');
   if (props.isSmall) className.push('btn-sm');
@@ -57,7 +58,7 @@ export const Button = (props) => {
       {props.children}
     </button>
   );
-};
+}
 
 Button.propTypes = {
   type: PropTypes.oneOf(['button', 'link']),

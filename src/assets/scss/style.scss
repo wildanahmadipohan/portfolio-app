@@ -7,47 +7,114 @@
 
 // scss-docs-start import-stack
 // Configuration
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "utilities";
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
 
 // Layout & components
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'containers';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'accordion';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'alert';
+@import 'progress';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+@import 'offcanvas';
+@import 'placeholders';
 
 // Helpers
-@import "helpers";
+@import 'helpers';
 
 // Utilities
-@import "utilities/api";
+@import 'utilities/api';
 // scss-docs-end import-stack
+
+// My Style
+.brand-text-icon {
+  color: $primary;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+
+  span {
+    font-weight: 300;
+  }
+}
+
+header {
+  border-bottom: 1px solid $gray-200;
+  width: 100%;
+  position: relative;
+
+  .navbar {
+    height: 80px;
+
+    .navbar-nav {
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            color: $primary;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $gray-900;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              background-color: $secondary;
+              height: 2px;
+              width: 0;
+              left: 0;
+              bottom: 0;
+              transition: 0.3s;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+}
