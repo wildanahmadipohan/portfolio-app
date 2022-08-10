@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function Button(props) {
+const Button = (props) => {
   const className = [props.className];
   if (props.isPrimary) className.push('btn-primary');
   if (props.isSmall) className.push('btn-sm');
@@ -58,7 +58,7 @@ export default function Button(props) {
       {props.children}
     </button>
   );
-}
+};
 
 Button.propTypes = {
   type: PropTypes.oneOf(['button', 'link']),
@@ -75,3 +75,5 @@ Button.propTypes = {
   isLoading: PropTypes.bool,
   hasShadow: PropTypes.bool,
 };
+
+export default Button;

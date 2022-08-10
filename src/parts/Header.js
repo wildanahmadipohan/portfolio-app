@@ -4,7 +4,7 @@ import Button from 'elements/Button';
 import IconText from './IconText';
 import { useLocation } from 'react-router-dom';
 
-export default function Header(props) {
+const Header = (props) => {
   const location = useLocation();
 
   const getNavLinkClass = (path) => {
@@ -14,7 +14,7 @@ export default function Header(props) {
   return (
     <header className='spacing-sm'>
       <div className='container'>
-        <nav className='navbar navbar-expand-lg navbar-light'>
+        <nav className='navbar navbar-expand-md navbar-light'>
           <IconText />
           <div className='collapse navbar-collapse'>
             <ul className='navbar-nav'>
@@ -49,4 +49,6 @@ export default function Header(props) {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

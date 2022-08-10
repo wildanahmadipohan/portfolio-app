@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from 'elements/Button';
 
-export default function IconText() {
+const IconText = () => {
   return (
     <Button className='brand-text-icon' href='#' type='link'>
       WAP<span className='text-secondary'>Site</span>
     </Button>
   );
-}
+};
+
+export default IconText;
