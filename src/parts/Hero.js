@@ -24,7 +24,7 @@ const Hero = (props) => {
 
   const showMeNow = () =>
     window.scrollTo({
-      top: props.refAboutMe.current.offsetTop - 30,
+      top: props.refAboutMe.current.offsetTop - 25,
       behavior: 'smooth',
     });
 
@@ -47,7 +47,7 @@ const Hero = (props) => {
         </div>
 
         <div className='col-12 col-md-6 pl-5 py-5'>
-          <div className='image-hero position-relative'>
+          <div className='image-hero position-relative hero-md-end'>
             <img
               src={ImageHero2}
               alt='My Hero'

@@ -122,6 +122,14 @@ header {
   }
 }
 
+section {
+  margin-bottom: 70px;
+
+  h4.section-title {
+    padding-bottom: 1rem;
+  }
+}
+
 .collapse {
   display: flex;
   justify-content: flex-end;
@@ -149,9 +157,16 @@ header {
   }
 
   .image-hero {
-    height: 405px;
-    justify-content: end;
     margin-top: 0;
+    height: 405px;
+
+    &.hero-md-start {
+      justify-content: start;
+    }
+
+    &.hero-md-end {
+      justify-content: end;
+    }
 
     img {
       max-height: 405px;
