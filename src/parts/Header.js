@@ -3,6 +3,7 @@ import React from 'react';
 import Button from 'elements/Button';
 import IconText from './IconText';
 import MobileMenu from './MobileMenu';
+import { Fade } from 'react-reveal';
 
 const Header = (props) => {
   const goTo = (ref) =>
@@ -39,43 +40,45 @@ const Header = (props) => {
   };
 
   return (
-    <header className='spacing-sm'>
-      <div className='container'>
-        <nav className='navbar navbar-expand-md navbar-light'>
-          <IconText />
-          <div className='collapse navbar-collapse'>
-            <ul className='navbar-nav'>
-              <li className='nav-item active'>
-                <Button className='btn nav-link' onClick={() => showSection('home')}>
-                  Home
-                </Button>
-              </li>
-              <li className='nav-item'>
-                <Button className='btn nav-link' onClick={() => showSection('about-me')}>
-                  About Me
-                </Button>
-              </li>
-              <li className='nav-item'>
-                <Button className='btn nav-link' onClick={() => showSection('ability')}>
-                  Ability
-                </Button>
-              </li>
-              <li className='nav-item'>
-                <Button className='btn nav-link' onClick={() => showSection('portfolio')}>
-                  Portfolio
-                </Button>
-              </li>
-              <li className='nav-item'>
-                <Button className='btn nav-link' onClick={() => showSection('certificate')}>
-                  Certificate
-                </Button>
-              </li>
-            </ul>
-          </div>
-          <MobileMenu {...props} />
-        </nav>
-      </div>
-    </header>
+    <Fade>
+      <header className='spacing-sm'>
+        <div className='container'>
+          <nav className='navbar navbar-expand-md navbar-light'>
+            <IconText />
+            <div className='collapse navbar-collapse'>
+              <ul className='navbar-nav'>
+                <li className='nav-item active'>
+                  <Button className='btn nav-link' onClick={() => showSection('home')}>
+                    Home
+                  </Button>
+                </li>
+                <li className='nav-item'>
+                  <Button className='btn nav-link' onClick={() => showSection('about-me')}>
+                    About Me
+                  </Button>
+                </li>
+                <li className='nav-item'>
+                  <Button className='btn nav-link' onClick={() => showSection('ability')}>
+                    Ability
+                  </Button>
+                </li>
+                <li className='nav-item'>
+                  <Button className='btn nav-link' onClick={() => showSection('portfolio')}>
+                    Portfolio
+                  </Button>
+                </li>
+                <li className='nav-item'>
+                  <Button className='btn nav-link' onClick={() => showSection('certificate')}>
+                    Certificate
+                  </Button>
+                </li>
+              </ul>
+            </div>
+            <MobileMenu {...props} />
+          </nav>
+        </div>
+      </header>
+    </Fade>
   );
 };
 
