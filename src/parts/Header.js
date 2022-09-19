@@ -2,13 +2,40 @@ import React from 'react';
 
 import Button from 'elements/Button';
 import IconText from './IconText';
-import { useLocation } from 'react-router-dom';
+import MobileMenu from './MobileMenu';
 
 const Header = (props) => {
-  const location = useLocation();
+  const goTo = (ref) =>
+    window.scrollTo({
+      top: ref - 100,
+      behavior: 'smooth',
+    });
 
-  const getNavLinkClass = (path) => {
-    return location.pathname === path ? 'active' : '';
+  const showSection = (section) => {
+    switch (section) {
+      case 'home':
+        goTo(props.refHome.current.offsetTop);
+        break;
+
+      case 'about-me':
+        goTo(props.refAboutMe.current.offsetTop);
+        break;
+
+      case 'ability':
+        goTo(props.refAbility.current.offsetTop);
+        break;
+
+      case 'portfolio':
+        goTo(props.refPortfolio.current.offsetTop);
+        break;
+
+      case 'certificate':
+        goTo(props.refCertificate.current.offsetTop);
+        break;
+
+      default:
+        break;
+    }
   };
 
   return (
@@ -18,33 +45,34 @@ const Header = (props) => {
           <IconText />
           <div className='collapse navbar-collapse'>
             <ul className='navbar-nav'>
-              <li className={`nav-item ${getNavLinkClass('/')}`}>
-                <Button className='nav-link' type='link' href=''>
+              <li className='nav-item active'>
+                <Button className='btn nav-link' onClick={() => showSection('home')}>
                   Home
                 </Button>
               </li>
-              <li className={`nav-item ${getNavLinkClass('/about-me')}`}>
-                <Button className='nav-link' type='link' href='/about-me'>
+              <li className='nav-item'>
+                <Button className='btn nav-link' onClick={() => showSection('about-me')}>
                   About Me
                 </Button>
               </li>
-              <li className={`nav-item ${getNavLinkClass('/ability')}`}>
-                <Button className='nav-link' type='link' href='/ability'>
+              <li className='nav-item'>
+                <Button className='btn nav-link' onClick={() => showSection('ability')}>
                   Ability
                 </Button>
               </li>
-              <li className={`nav-item ${getNavLinkClass('/portfolio')}`}>
-                <Button className='nav-link' type='link' href='/portfolio'>
+              <li className='nav-item'>
+                <Button className='btn nav-link' onClick={() => showSection('portfolio')}>
                   Portfolio
                 </Button>
               </li>
-              <li className={`nav-item ${getNavLinkClass('/certificate')}`}>
-                <Button className='nav-link' type='link' href='/certificate'>
+              <li className='nav-item'>
+                <Button className='btn nav-link' onClick={() => showSection('certificate')}>
                   Certificate
                 </Button>
               </li>
             </ul>
           </div>
+          <MobileMenu {...props} />
         </nav>
       </div>
     </header>

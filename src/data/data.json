@@ -1,0 +1,51 @@
+{
+  "landingPage": {
+    "header": {
+      "title": ["Wildan Ahmadi Pohan", "Website Developer"],
+      "subtitle": "Looking for a Website Developer? Let me introduce my self first.",
+      "imageUrl": "/images/hero/img-hero-2.png"
+    },
+    "aboutMe": {
+      "desc": "I am a bachelor of information systems. I have an interest in information technology. Currently, I focus on programming, especially Web Development. I have an understanding of HTML, CSS and Javascript programming language.",
+      "imageUrl": "/images/hero/img-hero-4.png"
+    },
+    "ability": [
+      {
+        "name": "HTML",
+        "icon": "/images/ability/ic_html.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "/images/ability/ic_css.svg"
+      },
+      {
+        "name": "Javascript",
+        "icon": "/images/ability/ic_js.svg"
+      },
+      {
+        "name": "SQL",
+        "icon": "/images/ability/ic_sql.svg"
+      },
+      {
+        "name": "React JS",
+        "icon": "/images/ability/ic_react.svg"
+      },
+      {
+        "name": "Express JS",
+        "icon": "/images/ability/ic_express.svg"
+      }
+    ],
+    "projects": [
+      {
+        "title": "WAPSite",
+        "categories": ["website", "mern", "portfolio"],
+        "thumbnail": "/images/projects/thumbnails/wapsite.jpg"
+      }
+    ],
+    "certificates": [
+      {
+        "imageUrl": "/images/certificates/dasar-web.png"
+      }
+    ]
+  }
+}

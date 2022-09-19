@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { render } from '@testing-library/react';
-import { Button } from '.';
+import Button from '.';
 
 test('should render span with disabled class when isDisabled is present', () => {
   const { container } = render(<Button isDisabled>Kirim</Button>);
