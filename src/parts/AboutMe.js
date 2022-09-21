@@ -7,9 +7,10 @@ import Button from 'elements/Button';
 
 const AboutMe = (props) => {
   const { desc, imageUrl } = props.data;
+
   return (
-    <Fade bottom>
-      <section id='about-me' className='container' ref={props.refAboutMe}>
+    <section id='about-me' className='container' ref={props.refAboutMe}>
+      <Fade bottom>
         <div className='row align-items-center'>
           <div className='col-12 col-md-6 order-2 order-md-1 pt-5 pt-md-0'>
             <div className='image-hero position-relative hero-md-start'>
@@ -37,8 +38,8 @@ const AboutMe = (props) => {
             </div>
           </div>
         </div>
-      </section>
-    </Fade>
+      </Fade>
+    </section>
   );
 };
 

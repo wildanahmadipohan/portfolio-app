@@ -18,7 +18,6 @@ export default class LandingPage extends Component {
       data: dataJson,
     };
 
-    // this.refAboutMe = React.createRef();
     this.refSection = {
       refHome: React.createRef(),
       refAboutMe: React.createRef(),
@@ -26,6 +25,11 @@ export default class LandingPage extends Component {
       refPortfolio: React.createRef(),
       refCertificate: React.createRef(),
     };
+  }
+
+  componentDidMount() {
+    document.title = 'WAPSite | Home';
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -46,10 +50,12 @@ export default class LandingPage extends Component {
           refAbility={this.refSection.refAbility}
         />
         <MyProjects
+          isLandingPage
           data={this.state.data.landingPage.projects}
           refPortfolio={this.refSection.refPortfolio}
         />
         <Certificate
+          isLandingPage
           data={this.state.data.landingPage.certificates}
           refCertificate={this.refSection.refCertificate}
         />

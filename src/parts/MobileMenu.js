@@ -1,5 +1,7 @@
-import Button from 'elements/Button';
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
+
+import Button from 'elements/Button';
 
 import IconHome from 'assets/images/ic_home.svg';
 import IconAboutMe from 'assets/images/ic_about_me.svg';
@@ -8,6 +10,9 @@ import IconPortfolio from 'assets/images/ic_portfolio.svg';
 import IconCertificate from 'assets/images/ic_certificate.svg';
 
 const MobileMenu = (props) => {
+  console.log(props)
+  const navigate = useNavigate();
+
   const goTo = (ref) =>
     window.scrollTo({
       top: ref - 100,
@@ -41,7 +46,17 @@ const MobileMenu = (props) => {
     }
   };
 
-  return (
+  return props.isCentered ? (
+    <div className='mobile-menu'>
+      <div className='container d-flex justify-content-end'>
+        <ul className='navbar-nav'>
+          <li className='nav-item active'>
+            <Button className='btn nav-link' type='button' onClick={() => navigate(-1)}> &#129144; Back</Button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  ) : (
     <div className='mobile-menu'>
       <ul className='navbar-nav'>
         <li className='nav-item active'>
@@ -71,7 +86,7 @@ const MobileMenu = (props) => {
         </li>
       </ul>
     </div>
-  );
+  )
 };
 
 export default MobileMenu;

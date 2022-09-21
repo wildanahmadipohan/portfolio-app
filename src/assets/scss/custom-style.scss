@@ -78,7 +78,7 @@ header {
   left: 0;
   width: 100%;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
 
   ul.navbar-nav {
     display: flex;
@@ -89,6 +89,13 @@ header {
       display: inline-block;
 
       .nav-link {
+        &.back {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
         img {
           width: 25px;
           height: 25px;
@@ -174,7 +181,7 @@ section {
 footer {
   border-top: 1px solid #bfbfbf;
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 50px;
 
   .sosmed {
     img {

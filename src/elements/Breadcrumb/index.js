@@ -6,7 +6,7 @@ import Button from 'elements/Button'
 const Breadcrumb = ({data}) => {
   return (
     <nav aria-label="breadcrumb">
-      <ol className='breadcrumb'>
+      <ol className='breadcrumb pt-1 pt-md-4'>
         {
           data.map((item, index) => {
             return (
