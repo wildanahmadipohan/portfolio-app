@@ -6,7 +6,7 @@ import dataJson from 'data/data.json';
 import Breadcrumb from 'elements/Breadcrumb';
 import Footer from 'parts/Footer';
 
-export class ProjectsPage extends Component {
+export default class ProjectsPage extends Component {
   constructor(props) {
     super(props);
 
@@ -22,7 +22,9 @@ export class ProjectsPage extends Component {
 
   componentDidMount() {
     document.title = 'WAPSite | Projects';
-    window.scrollTo(0, 0);
+    // setTimeout(() => {
+      window.scrollTo(0, 0);
+    // });
   }
 
   render() {
@@ -40,5 +42,3 @@ export class ProjectsPage extends Component {
     )
   }
 }
-
-export default ProjectsPage

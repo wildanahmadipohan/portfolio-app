@@ -37,6 +37,7 @@
     ],
     "projects": [
       {
+        "slug": "wapsite",
         "title": "WAPSite",
         "categories": ["website", "mern", "portfolio"],
         "thumbnail": "/images/projects/thumbnails/wapsite.jpg"
@@ -46,6 +47,29 @@
       {
         "imageUrl": "/images/certificates/dasar-web.png"
       }
+    ]
+  },
+  "WAPSite": {
+    "slug": "wapsite",
+    "title": "WAPSite",
+    "categories": ["website", "mern", "portfolio"],
+    "images": [
+      {
+        "id": 1,
+        "url": "/images/projects/thumbnails/wapsite.jpg"
+      },
+      {
+        "id": 2,
+        "url": "/images/projects/thumbnails/wapsite.jpg"
+      },
+      {
+        "id": 3,
+        "url": "/images/projects/thumbnails/wapsite.jpg"
+      }
+    ],
+    "desc": "<p>The Smart TA application is a desktop-based application that was built to detect errors in writing the final report of students of the Information Systems Study Program at UIN SUSKA Riau.</p> <p>This application can display information on the number and location of errors in writing the Final Project report.</p>",
+    "stacks": [
+      "HTML", "Javascript", "Express JS", "React JS", "Bootstrap", "Mongo DB"
     ]
   }
 }

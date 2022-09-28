@@ -10,7 +10,6 @@ import IconPortfolio from 'assets/images/ic_portfolio.svg';
 import IconCertificate from 'assets/images/ic_certificate.svg';
 
 const MobileMenu = (props) => {
-  console.log(props)
   const navigate = useNavigate();
 
   const goTo = (ref) =>

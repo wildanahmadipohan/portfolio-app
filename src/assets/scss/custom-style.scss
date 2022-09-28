@@ -170,6 +170,16 @@ section {
       }
     }
 
+    h5 {
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
     p {
       color: #b3b3b3;
       font-size: small;
@@ -190,6 +200,36 @@ footer {
       padding-right: 10px;
     }
   }
+}
+
+.img-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-detail__image {
+  .card {
+    border: 2px solid #BFBFBF;
+    border-radius: 10px;
+  }  
+}
+
+.img-wrapper {
+  height: 100%;
+  margin-bottom: 0;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.stack {
+  display: inline-block;
+  color: #B3B3B3;
+  border: 2px solid #BFBFBF;
+  border-radius: 3px;
+  padding: 6px 13px;
+  margin-right: 0.732rem;
+  margin-bottom: 0.732rem;
 }
 
 @media screen and (min-width: 768px) {

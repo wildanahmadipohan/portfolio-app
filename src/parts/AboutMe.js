@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Fade } from 'react-reveal';
-
+import { Fade } from "react-awesome-reveal";
 import ImageHeroFrame2 from 'assets/images/img-hero-frame-2.png';
 import Button from 'elements/Button';
 
@@ -10,7 +9,7 @@ const AboutMe = (props) => {
 
   return (
     <section id='about-me' className='container' ref={props.refAboutMe}>
-      <Fade bottom>
+      <Fade direction='up' fraction={1} triggerOnce>
         <div className='row align-items-center'>
           <div className='col-12 col-md-6 order-2 order-md-1 pt-5 pt-md-0'>
             <div className='image-hero position-relative hero-md-start'>

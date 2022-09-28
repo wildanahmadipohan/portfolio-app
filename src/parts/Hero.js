@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 
 import Typed from 'typed.js';
-import { Fade } from 'react-reveal';
+import { Fade } from "react-awesome-reveal";
 
 import ImageHeroFrame from 'assets/images/img-hero-frame-1.png';
 import Button from 'elements/Button';
@@ -31,7 +31,7 @@ const Hero = (props) => {
 
   return (
     <section className='hero container pt-4' ref={props.refHome}>
-      <Fade bottom>
+      <Fade direction='up' fraction={1} triggerOnce>
         <div className='row align-items-center'>
           <div className='col-12 col-md-6 pr-5 d-flex flex-column align-items-center align-items-md-start'>
             <h1 className='font-weight-bold mb-0 text-primary lh-sm '>Hello, I am</h1>
