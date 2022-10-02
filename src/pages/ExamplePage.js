@@ -1,4 +1,5 @@
 import Breadcrumb from 'elements/Breadcrumb';
+import MyModal from 'parts/MyModal';
 import React, { Component } from 'react'
 
 export class ExamplePage extends Component {
@@ -13,6 +14,7 @@ export class ExamplePage extends Component {
         <div className="row align-items-center justify-content-center" style={{height: '100vh'}}>
           <div className="col-auto">
             <Breadcrumb data={data} />
+            <MyModal show handleClose={() => console.log('close')}>Hello</MyModal>
           </div>
         </div>
       </div>

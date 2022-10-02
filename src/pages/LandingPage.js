@@ -9,6 +9,7 @@ import Certificate from 'parts/Certificate';
 
 import dataJson from 'data/data.json';
 import Footer from 'parts/Footer';
+import MyModal from 'parts/MyModal';
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -16,6 +17,8 @@ export default class LandingPage extends Component {
 
     this.state = {
       data: dataJson,
+      show: false,
+      itemModal: {}
     };
 
     this.refSection = {
@@ -25,11 +28,22 @@ export default class LandingPage extends Component {
       refPortfolio: React.createRef(),
       refCertificate: React.createRef(),
     };
+
+    this.onShowModalHandler = this.onShowModalHandler.bind(this);
+    this.onHideModalHandler = this.onHideModalHandler.bind(this);
   }
 
   componentDidMount() {
     document.title = 'WAPSite | Home';
     window.scrollTo(0, 0);
+  }
+
+  onShowModalHandler(item) {
+    this.setState({show: true, itemModal: item});
+  }
+
+  onHideModalHandler() {
+    this.setState({show: false, itemModal: {}});
   }
 
   render() {
@@ -58,7 +72,11 @@ export default class LandingPage extends Component {
           isLandingPage
           data={this.state.data.landingPage.certificates}
           refCertificate={this.refSection.refCertificate}
+          showModal={this.onShowModalHandler}
         />
+        <MyModal show={this.state.show} handleClose={this.onHideModalHandler}>
+          <img src={this.state.itemModal.imageUrl} alt={`certificate`} style={{ width: '100%'}} />
+        </MyModal>
         <Footer />
       </>
     );

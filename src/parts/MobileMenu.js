@@ -50,7 +50,7 @@ const MobileMenu = (props) => {
       <div className='container d-flex justify-content-end'>
         <ul className='navbar-nav'>
           <li className='nav-item active'>
-            <Button className='btn nav-link' type='button' onClick={() => navigate(-1)}> &#129144; Back</Button>
+            <Button className='btn nav-link' type='button' onClick={() => navigate(-1)}> &#8617; Back</Button>
           </li>
         </ul>
       </div>
