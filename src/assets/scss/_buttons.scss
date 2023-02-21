@@ -7,7 +7,7 @@
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
-  min-height: 50px;
+  // min-height: 50px;
   color: $body-color;
   text-align: center;
   text-decoration: if($link-decoration == none, null, none);

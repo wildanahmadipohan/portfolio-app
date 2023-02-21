@@ -37,7 +37,7 @@ const Button = (props) => {
       return (
         <a
           href={props.href}
-          className={className.join(' ')}
+          className={`${className.join(' ')} is-external`}
           style={props.style}
           target={props.target === '_blank' ? '_blank' : undefined}
           rel={props.target === '_blank' ? 'noopener noreferrer' : undefined}>

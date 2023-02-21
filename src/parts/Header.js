@@ -3,8 +3,11 @@ import React from 'react';
 import Button from 'elements/Button';
 import IconText from './IconText';
 import MobileMenu from './MobileMenu';
+import { useNavigate } from 'react-router-dom';
 
 const Header = (props) => {
+  const navigate = useNavigate();
+
   const goTo = (ref) =>
     window.scrollTo({
       top: ref - 100,
@@ -42,6 +45,9 @@ const Header = (props) => {
     <header className='spacing-sm'>
       <div className='container'>
         <nav className='navbar navbar-expand-md navbar-light d-flex justify-content-center'>
+          <Button type='button' isExternal className='btn p-0 nav-back d-none d-md-flex' onClick={() => navigate(-1)}>
+            <span className="arrow">&#10132;</span> Back
+          </Button>
           <IconText />
           <MobileMenu {...props} />
         </nav>

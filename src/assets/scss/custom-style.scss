@@ -6,26 +6,92 @@ body {
   background-color: #f5f7f9;
 }
 
-.brand-text-icon {
-  color: $primary;
-  font-size: 26px;
-  font-weight: 500;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
+.btn-primary {
+  background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%) !important;
+  border: none !important;
+  // width: 200px !important;
+}
+
+.btn-secondary {
+  background: none;
+  color: #152c5b;
+  border-radius: 50rem;
+  position: relative;
+  box-sizing: border-box;
+
+  $border: 2px;
+  background: #f5f7f9;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  border-radius: 50rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
+  }
+
+  &::before:hover {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
+  }
 
   &:hover {
-    color: $primary;
-  }
+    background: none;
+    color: #152c5b;
+    border-radius: 50rem;
+    position: relative;
+    box-sizing: border-box;
 
-  span {
-    font-weight: 300;
+    $border: 2px;
+    background: #f5f7f9;
+    background-clip: padding-box;
+    border: solid $border transparent;
+    border-radius: 50rem;
   }
+}
+
+.brand-icon {
+  img {
+    width: 4rem;
+  }
+}
+
+.greeting-text {
+  background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header {
   background-color: #f5f7f9;
   border-bottom: 1px solid #bfbfbf;
   width: 100%;
+
+  .nav-back {
+    color: $gray-900;
+    display: flex;
+    align-items: center;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+
+    span.arrow{
+      margin-right: 5px;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
 
   .navbar {
     height: 80px;
@@ -34,7 +100,10 @@ header {
       li.nav-item {
         &.active {
           button.nav-link {
-            color: $primary;
+            background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         }
         button {
@@ -50,7 +119,7 @@ header {
             &::after {
               content: '';
               position: absolute;
-              background-color: $secondary;
+              background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
               height: 2px;
               width: 0;
               left: 0;
@@ -77,6 +146,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 10px 3px;
   position: fixed;
   z-index: 99999;
 
@@ -105,15 +175,6 @@ header {
   }
 }
 
-.btn-secondary {
-  background-color: #e5e9f2;
-  color: #152c5b;
-
-  &:hover {
-    background-color: #dee3ef;
-    color: #152c5b;
-  }
-}
 
 section {
   margin-bottom: 70px;
@@ -155,28 +216,23 @@ section {
   }
 }
 
-.project-item {
+.project-item, 
+.certificate-item {
   .card {
     border: none;
     border-radius: 15px;
+    box-shadow: 0px 2px 25px 3px #E5E5E5;
+    overflow: hidden;
 
     figure {
       width: 100%;
+      height: 10rem;
       overflow: hidden;
+      border-radius: 15px 15px 0px 0px;
 
       img {
         width: 100%;
         object-fit: cover;
-      }
-    }
-
-    h5 {
-      a {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
       }
     }
 
@@ -188,24 +244,10 @@ section {
   }
 }
 
-.certificate-figure {
-  &:hover {
-    cursor: pointer;
-  }
-  
-  img {
-    transition: transform .3s ease;
-
-    &:hover {
-      transform: scale(1.3);
-    }
-  }
-}
-
 footer {
   border-top: 1px solid #bfbfbf;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 
   .sosmed {
     img {
@@ -244,6 +286,21 @@ footer {
   padding: 6px 13px;
   margin-right: 0.732rem;
   margin-bottom: 0.732rem;
+}
+
+.arrow-carousel {
+  position: absolute;
+  bottom: 55px;
+  font-size: 2rem;
+
+  &.right {
+    margin-left: 10px;
+  }
+
+  &.left {
+    z-index: 99;
+    margin-left: -25px;
+  }
 }
 
 @media screen and (min-width: 768px) {

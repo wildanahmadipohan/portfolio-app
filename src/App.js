@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from 'pages/LandingPage';
 import ProjectsPage from 'pages/ProjectsPage';
 import CertificatesPage from 'pages/CertificatesPage';
-import ExamplePage from 'pages/ExamplePage';
 import ProjectDetailPage from 'pages/ProjectDetailPage';
+import Counter from 'pages/Counter';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/project/:slug' element={<ProjectDetailPage />} />
           <Route path='/certificates' element={<CertificatesPage />} />
-          <Route path='/example' element={<ExamplePage />} />
+          <Route path='/counter' element={<Counter />} />
         </Routes>
       </Router>
     </div>

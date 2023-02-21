@@ -6,33 +6,33 @@
       "imageUrl": "/images/hero/img-hero-2.png"
     },
     "aboutMe": {
-      "desc": "I am a bachelor of information systems. I have an interest in information technology. Currently, I focus on programming, especially Web Development. I have an understanding of HTML, CSS and Javascript programming language.",
+      "description": "I am a bachelor of information systems. I have an interest in information technology. Currently, I focus on programming, especially Web Development. I have an understanding of HTML, CSS and Javascript programming language.",
       "imageUrl": "/images/hero/img-hero-4.png"
     },
     "ability": [
       {
         "name": "HTML",
-        "icon": "/images/ability/ic_html.svg"
+        "imageUrl": "/images/ability/ic_html.svg"
       },
       {
         "name": "CSS",
-        "icon": "/images/ability/ic_css.svg"
+        "imageUrl": "/images/ability/ic_css.svg"
       },
       {
         "name": "Javascript",
-        "icon": "/images/ability/ic_js.svg"
+        "imageUrl": "/images/ability/ic_js.svg"
       },
       {
         "name": "SQL",
-        "icon": "/images/ability/ic_sql.svg"
+        "imageUrl": "/images/ability/ic_sql.svg"
       },
       {
         "name": "React JS",
-        "icon": "/images/ability/ic_react.svg"
+        "imageUrl": "/images/ability/ic_react.svg"
       },
       {
         "name": "Express JS",
-        "icon": "/images/ability/ic_express.svg"
+        "imageUrl": "/images/ability/ic_express.svg"
       }
     ],
     "projects": [
@@ -45,6 +45,10 @@
     ],
     "certificates": [
       {
+        "name": "Pemrograman Dasar Web",
+        "organization": "Dicoding Indonesia",
+        "date": "12 November 2020",
+        "credentialUrl": "https://www.dicoding.com/certificates/MRZMGQMNNZYQ",
         "imageUrl": "/images/certificates/dasar-web.png"
       }
     ]
@@ -52,7 +56,7 @@
   "WAPSite": {
     "slug": "wapsite",
     "title": "WAPSite",
-    "categories": ["website", "mern", "portfolio"],
+    "tag": ["website", "mern", "portfolio"],
     "images": [
       {
         "id": 1,

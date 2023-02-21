@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from 'elements/Button';
 
+import wapLogo from '../assets/images/wap-logo.png';
+
 const IconText = () => {
   return (
-    <Button className='brand-text-icon' href='/' type='link'>
-      WAP<span className='text-secondary'>Site</span>
+    <Button className='brand-icon' href='/' type='link'>
+      <img src={wapLogo} alt="WAP" />
     </Button>
   );
 };

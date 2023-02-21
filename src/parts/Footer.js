@@ -12,7 +12,7 @@ const Footer = (props) => {
     <footer>
       <div className='container'>
         <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
-          <div className='py-4'>
+          <div className='py-4 text-center text-md-start'>
             <IconText />
             <div className='sosmed pt-2'>
               <Button type='link' href='https://www.facebook.com/wildanahmadipohan' isExternal>
