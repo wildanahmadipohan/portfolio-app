@@ -12,10 +12,10 @@ function App() {
     <div className='App'>
       <Router>
         <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/projects' element={<ProjectsPage />} />
-          <Route path='/project/:slug' element={<ProjectDetailPage />} />
-          <Route path='/certificates' element={<CertificatesPage />} />
+          <Route path='/wapsite' element={<LandingPage />} />
+          <Route path='/wapsite/projects' element={<ProjectsPage />} />
+          <Route path='/wapsite/project/:slug' element={<ProjectDetailPage />} />
+          <Route path='/wapsite/certificates' element={<CertificatesPage />} />
           <Route path='/counter' element={<Counter />} />
         </Routes>
       </Router>

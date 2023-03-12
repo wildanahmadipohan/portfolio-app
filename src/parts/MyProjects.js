@@ -6,6 +6,7 @@ import Button from 'elements/Button';
 
 export default function MyProjects(props) {
   const projects = props.data;
+  const base_url = process.env.REACT_APP_API_HOST;
 
   return (
     <section className='container pt-5' ref={props.refPortfolio}>
@@ -23,7 +24,7 @@ export default function MyProjects(props) {
             <div className='col project-item' key={`project-${index}`}>
               <Fade direction='up' delay={300 * index} fraction={0} triggerOnce>
                 <div className='card mb-3'>
-                  <img src={item.thumbnail} className="card-img-top" alt={item.title} />
+                  <img src={`${base_url}/${item.thumbnail}`} className="card-img-top" alt={item.title} />
                   <div className="card-body">
                     <h5 className='card-title'>
                       {item.title}

@@ -7,6 +7,7 @@ import ArrowCarousel from './ArrowCarousel';
 const Ability = (props) => {
   const abilities = props.data;
   const {width} = useWindowSize();
+  const base_url = process.env.REACT_APP_API_HOST;
 
   function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -43,7 +44,7 @@ const Ability = (props) => {
             {abilities.map((item, index) => (
               <div className='col' key={`ability-${index}`}>
                   <div className='card ability-item p-3 d-flex justify-content-between align-items-center'>
-                    <img src={`${process.env.REACT_APP_API_HOST}/${item.imageUrl}`} alt={item.name} />
+                    <img src={`${base_url}/${item.imageUrl}`} alt={item.name} />
                     <h6>{item.name}</h6>
                   </div>
               </div>

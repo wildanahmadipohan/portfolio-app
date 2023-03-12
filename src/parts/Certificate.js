@@ -6,6 +6,7 @@ import Button from 'elements/Button';
 
 const Certificate = (props) => {
   const certificates = props.data;
+  const base_url = process.env.REACT_APP_API_HOST;
 
   return (
     <section className='container pt-5' ref={props.refCertificate}>
@@ -25,7 +26,7 @@ const Certificate = (props) => {
             <div className='col certificate-item' key={`certificate-${index}`}>
               <Fade direction='up' delay={200 * index} fraction={0} triggerOnce>
                 <div className="card mb-3">
-                  <img className='card-img-top' style={{cursor: 'pointer'}} src={item.imageUrl} alt={`certificate-${index}`} onClick={() => props.showModal(item)} />
+                  <img className='card-img-top' style={{cursor: 'pointer'}} src={`${base_url}/${item.imageUrl}`} alt={`certificate-${index}`} onClick={() => props.showModal(item)} />
                   <div className="card-body">
                     <h5 className='card-title'>
                       {item.name}

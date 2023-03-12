@@ -2,6 +2,8 @@ import React from 'react'
 import { Fade } from "react-awesome-reveal";
 
 export default function ProjectDetailImages({data}) {
+  const base_url = process.env.REACT_APP_API_HOST;
+
   return (
     <section className="container project-detail__image">
       <div className="container-grid sm">
@@ -12,7 +14,7 @@ export default function ProjectDetailImages({data}) {
                 <Fade direction='up' delay={300 * index} triggerOnce>
                   <div className="card h-100">
                     <figure className="img-wrapper">
-                      <img src={item.url} alt={item.id} className="img-cover" />
+                      <img src={`${base_url}/${item.url}`} alt={item.id} className="img-cover" />
                     </figure>
                   </div>
                 </Fade>
