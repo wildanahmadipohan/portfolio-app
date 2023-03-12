@@ -39,24 +39,199 @@
       {
         "slug": "wapsite",
         "title": "WAPSite",
-        "categories": ["website", "mern", "portfolio"],
-        "thumbnail": "/images/projects/thumbnails/wapsite.jpg"
+        "tag": ["website", "react js", "portfolio"],
+        "thumbnail": "/images/projects/thumbnails/wapsite.png"
+      },
+      {
+        "slug": "smart-ta",
+        "title": "Smart TA",
+        "tag": ["desktop", "java", "skripsi"],
+        "thumbnail": "/images/projects/thumbnails/smart-ta.png"
+      },
+      {
+        "slug": "e-kwitansi",
+        "title" : "E-Kwitansi",
+        "tag": ["website", "codeigniter", "ud.mb"],
+        "thumbnail": "/images/projects/thumbnails/e-kwitansi.png"
       }
     ],
     "certificates": [
       {
-        "name": "Pemrograman Dasar Web",
+        "name": "Menjadi Front-End Web Developer Expert",
         "organization": "Dicoding Indonesia",
-        "date": "12 November 2020",
-        "credentialUrl": "https://www.dicoding.com/certificates/MRZMGQMNNZYQ",
-        "imageUrl": "/images/certificates/dasar-web.png"
+        "date": "01 Agustus 2021",
+        "credentialUrl": "https://www.dicoding.com/certificates/MRZMD5JDKZYQ",
+        "imageUrl": "/images/certificates/front-end-expert.png"
+      },
+      {
+        "name": "Belajar Fundamental Front-End Web Development",
+        "organization": "Dicoding Indonesia",
+        "date": "21 Agustus 2020",
+        "credentialUrl": "https://www.dicoding.com/certificates/J1RXY520MXVM",
+        "imageUrl": "/images/certificates/front-end-fundamental.png"
+      },
+      {
+        "name": "Belajar Membuat Front-End Web untuk Pemula",
+        "organization": "Dicoding Indonesia",
+        "date": "27 Juli 2021",
+        "credentialUrl": "https://www.dicoding.com/certificates/0LZ03GNM3Z65",
+        "imageUrl": "/images/certificates/front-end-pemula.png"
       }
     ]
   },
+  "certificates": [
+    {
+      "name": "Menjadi Front-End Web Developer Expert",
+      "organization": "Dicoding Indonesia",
+      "date": "01 Agustus 2021",
+      "credentialUrl": "https://www.dicoding.com/certificates/MRZMD5JDKZYQ",
+      "imageUrl": "/images/certificates/front-end-expert.png"
+    },
+    {
+      "name": "Belajar Fundamental Front-End Web Development",
+      "organization": "Dicoding Indonesia",
+      "date": "21 Agustus 2020",
+      "credentialUrl": "https://www.dicoding.com/certificates/J1RXY520MXVM",
+      "imageUrl": "/images/certificates/front-end-fundamental.png"
+    },
+    {
+      "name": "Belajar Membuat Front-End Web untuk Pemula",
+      "organization": "Dicoding Indonesia",
+      "date": "27 Juli 2021",
+      "credentialUrl": "https://www.dicoding.com/certificates/0LZ03GNM3Z65",
+      "imageUrl": "/images/certificates/front-end-pemula.png"
+    },
+    {
+      "name": "Belajar Dasar Pemrograman Web",
+      "organization": "Dicoding Indonesia",
+      "date": "28 Juli 2020",
+      "credentialUrl": "https://www.dicoding.com/certificates/53XEE4EO0XRN",
+      "imageUrl": "/images/certificates/dasar-web.png"
+    },
+    {
+      "name": "Belajar Dasar Pemrograman JavaScript",
+      "organization": "Dicoding Indonesia",
+      "date": "24 Mei 2021",
+      "credentialUrl": "https://www.dicoding.com/certificates/NVP79ERRVZR0",
+      "imageUrl": "/images/certificates/dasar-javascript.png"
+    },
+    {
+      "name": "Belajar Fundamental Aplikasi Back-End",
+      "organization": "Dicoding Indonesia",
+      "date": "19 Agustus 2021",
+      "credentialUrl": "https://www.dicoding.com/certificates/98XWK25D9XM3",
+      "imageUrl": "/images/certificates/backend-fundamental.png"
+    },
+    {
+      "name": "Belajar Membuat Aplikasi Back-End untuk Pemula",
+      "organization": "Dicoding Indonesia",
+      "date": "17 Mei 2021",
+      "credentialUrl": "https://www.dicoding.com/certificates/MEPJ5087QP3V",
+      "imageUrl": "/images/certificates/backend-pemula.png"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "wapsite",
+      "title": "WAPSite",
+      "tag": ["website", "react js", "portfolio"],
+      "thumbnail": "/images/projects/thumbnails/wapsite.png",
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/projects/wapsite/wapsite.png"
+        },
+        {
+          "id": 2,
+          "url": "/images/projects/wapsite/wapsite-2.png"
+        },
+        {
+          "id": 3,
+          "url": "/images/projects/wapsite/wapsite-3.png"
+        }
+      ],
+      "desc": "<p>WAPSite merupakan website personal portfolio saya. Website ini berguna untuk memberikan informasi tentang saya, beberapa projek dan latihan yang pernah saya kerjakan, dan beberapa sertifikat belajar pemrograman yang saya dapatkan.</p> <p>Website ini masih bersifat statis yang dibangun menggunakan bahasa pemrograman javascript dengan <i>Framework</i> React JS.</p>",
+      "stacks": [
+        "HTML", "Javascript", "React JS", "Bootstrap", "Redux"
+      ]
+    },
+    {
+      "slug": "smart-ta",
+      "title": "Smart TA",
+      "tag": ["desktop", "java", "skripsi"],
+      "thumbnail": "/images/projects/thumbnails/wapsite.png",
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/projects/smart-ta/1.png"
+        },
+        {
+          "id": 2,
+          "url": "/images/projects/smart-ta/2.png"
+        },
+        {
+          "id": 3,
+          "url": "/images/projects/smart-ta/3.png"
+        }
+      ],
+      "desc": "<p>Aplikasi Smart TA merupakan aplikasi berbasis Desktop yang dibangun untuk mendeteksi kesalahan penulisan laporan Tugas Akhir mahasiswa Program Studi Sistem Informasi UIN SUSKA Riau.</p> <p>Aplikasi ini dapat menampilkan informasi jumlah dan lokasi kesalahan penulisan laporan Tugas Akhir tersebut.</p>",
+      "stacks": [
+        "Java Swing", "Java", "Regex"
+      ]
+    },
+    {
+      "slug": "e-kwitansi",
+      "title": "E-Kwitansi",
+      "tag": ["website", "PHP", "codeigniter"],
+      "thumbnail": "/images/projects/thumbnails/e-kwitansi.png",
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/projects/e-kwitansi/1.png"
+        },
+        {
+          "id": 2,
+          "url": "/images/projects/e-kwitansi/2.png"
+        },
+        {
+          "id": 3,
+          "url": "/images/projects/e-kwitansi/3.png"
+        }
+      ],
+      "desc": "<p>Aplikasi E-Kwitansi merupakan aplikasi berbasis website yang dibangun untuk mencetak kwitansi penyewaan alat-alat pada UD. Maju Bersama.</p> <p>Aplikasi ini dibangun menggunakan bahasa pemrograman PHP dengan <i>Framework</i> Codeigniter.</p>",
+      "stacks": [
+        "HTML", "Javascript", "PHP", "Codeigniter", "SB Admin", "My Sql"
+      ]
+    },
+    {
+      "slug": "e-commerce-makanan-khas-daerah",
+      "title": "E-Commerce Makanan Khas Daerah",
+      "tag": ["website", "python", "django"],
+      "thumbnail": "/images/projects/thumbnails/e-commerce.png",
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/projects/e-commerce/1.png"
+        },
+        {
+          "id": 2,
+          "url": "/images/projects/e-commerce/2.png"
+        },
+        {
+          "id": 3,
+          "url": "/images/projects/e-commerce/3.png"
+        }
+      ],
+      "desc": "<p>Website E-Commerce Makanan Khas Daerah merupakan website projek Skripsi untuk menyelesaikan pendidikan S-1 Sistem Informasi yang dibangun untuk melakukan penjualan dan pemasaran produk-produk makanan khas daerah.</p> <p>Website ini dibangun menggunakan bahasa pemrograman Python dengan <i>Framework</i> Django.</p>",
+      "stacks": [
+        "HTML", "Javascript", "Python", "Django", "Bootstrap", "My Sql"
+      ]
+    }
+  ],
   "WAPSite": {
     "slug": "wapsite",
     "title": "WAPSite",
-    "tag": ["website", "mern", "portfolio"],
+    "tag": ["website", "react js", "portfolio"],
     "images": [
       {
         "id": 1,

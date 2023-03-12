@@ -9,7 +9,7 @@ export default function MyProjects(props) {
 
   return (
     <section className='container pt-5' ref={props.refPortfolio}>
-      <Fade direction='up' fraction={1} triggerOnce>
+      <Fade direction='up' fraction={0} triggerOnce>
         <div className='d-flex align-items-center justify-content-center justify-content-md-between'>
           <h4 className='section-title text-center align-self-center mb-0'>Portfolio</h4>
           {
@@ -21,14 +21,14 @@ export default function MyProjects(props) {
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 px-3 px-md-0'>
           {projects.map((item, index) => (
             <div className='col project-item' key={`project-${index}`}>
-              <Fade direction='up' delay={300 * index} fraction={1} triggerOnce>
+              <Fade direction='up' delay={300 * index} fraction={0} triggerOnce>
                 <div className='card mb-3'>
                   <img src={item.thumbnail} className="card-img-top" alt={item.title} />
                   <div className="card-body">
                     <h5 className='card-title'>
                       {item.title}
                     </h5>
-                    <p className='card-text'>{item.categories.map((n) => n.toUpperCase()).join(' | ')}</p>
+                    <p className='card-text'>{item.tag.map((n) => n.toUpperCase()).join(' | ')}</p>
                     <Button type='link' className='btn btn-sm btn-primary' hasShadow href={`/project/${item.slug}`}>
                       View Detail
                     </Button>

@@ -37,7 +37,7 @@ const AboutMe = (props) => {
               <h4 className='section-title text-center text-md-start'>About Me</h4>
               <p className='mb-5 mt-4 text-paragraph  text-center text-md-start'>{parse(description)}</p>
               <div className='text-center text-md-start'>
-                <Button className='btn px-4' hasShadow isPrimary>
+                <Button type='link' isExternal target='_blank' href='/pdf/cv.pdf' className='btn px-4' hasShadow isPrimary>
                   Download CV
                 </Button>
               </div>

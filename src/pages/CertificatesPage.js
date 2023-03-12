@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 
-import dataJson from 'data/data.json';
+// store - redux
+import { connect } from 'react-redux';
+import { fetchCertificatePage } from 'features/certificatePageSlice';
+
 import Header from 'parts/Header';
 import Certificate from 'parts/Certificate';
 import Breadcrumb from 'elements/Breadcrumb';
 import Footer from 'parts/Footer';
 import MyModal from 'parts/MyModal';
+import Loading from 'parts/Loading';
 
-export class CertificatesPage extends Component {
+class CertificatesPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      data: dataJson,
       show: false,
       itemModal: {}
     }
@@ -31,6 +34,10 @@ export class CertificatesPage extends Component {
     setTimeout(() => {
       window.scrollTo(0, 0)
     });
+
+    if (this.props.status === 'idle') {
+      this.props.fetchCertificatePage();
+    }
   }
 
   onShowModalHandler(item) {
@@ -42,22 +49,40 @@ export class CertificatesPage extends Component {
   }
 
   render() {
-    return (
-      <>
-        <Header isCentered />
-        <div className="content" style={{minHeight: '100vh'}}>
-          <div className="container pt-4 mt-md-5 pt-md-5">
-            <Breadcrumb data={this.breadcrumbList} />
+    const { certificates, status } = this.props;
+
+    if (status === 'loading') {
+      return (<Loading />)
+    }
+
+    if (status === 'succeeded') {
+      return (
+        <>
+          <Header isCentered />
+          <div className="content" style={{minHeight: '100vh'}}>
+            <div className="container pt-4 mt-md-5 pt-md-5">
+              <Breadcrumb data={this.breadcrumbList} />
+            </div>
+            <Certificate data={certificates} showModal={this.onShowModalHandler} />
           </div>
-          <Certificate data={this.state.data.landingPage.certificates} showModal={this.onShowModalHandler} />
-        </div>
-        <MyModal show={this.state.show} handleClose={this.onHideModalHandler}>
-          <img src={this.state.itemModal.imageUrl} alt='certificate' style={{width: '100%'}} />
-        </MyModal>
-        <Footer />
-      </>
-    )
+          <MyModal show={this.state.show} handleClose={this.onHideModalHandler}>
+            <img src={this.state.itemModal.imageUrl} alt='certificate' style={{width: '100%'}} />
+          </MyModal>
+          <Footer />
+        </>
+      )
+    }
+    
+    if (status === 'failed') {
+      return (<h1>Error</h1>)
+    }
+    
   }
 }
 
-export default CertificatesPage
+const mapStateToProps = (state) => ({
+  certificates: state.certificatePage.certificates,
+  status: state.certificatePage.status
+})
+
+export default connect(mapStateToProps, {fetchCertificatePage})(CertificatesPage)

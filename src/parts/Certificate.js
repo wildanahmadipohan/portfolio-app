@@ -9,7 +9,7 @@ const Certificate = (props) => {
 
   return (
     <section className='container pt-5' ref={props.refCertificate}>
-      <Fade direction='up' fraction={1} triggerOnce>
+      <Fade direction='up' fraction={0} triggerOnce>
         <div className='d-flex align-items-center justify-content-center justify-content-md-between'>
           <h4 className='section-title text-center text-md-start mb-0'>Certificate</h4>
           {
@@ -23,7 +23,7 @@ const Certificate = (props) => {
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 px-3 px-md-0'>
           {certificates.map((item, index) => (
             <div className='col certificate-item' key={`certificate-${index}`}>
-              <Fade direction='up' delay={300 * index} fraction={1} triggerOnce>
+              <Fade direction='up' delay={200 * index} fraction={0} triggerOnce>
                 <div className="card mb-3">
                   <img className='card-img-top' style={{cursor: 'pointer'}} src={item.imageUrl} alt={`certificate-${index}`} onClick={() => props.showModal(item)} />
                   <div className="card-body">

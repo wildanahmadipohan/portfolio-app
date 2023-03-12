@@ -15,14 +15,11 @@ import Footer from 'parts/Footer';
 import MyModal from 'parts/MyModal';
 import Loading from 'parts/Loading';
 
-import dataJson from 'data/data.json';
-
 class LandingPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      data: dataJson,
       show: false,
       itemModal: {}
     };
@@ -83,12 +80,12 @@ class LandingPage extends Component {
           />
           <MyProjects
             isLandingPage
-            data={this.state.data.landingPage.projects}
+            data={page.projects}
             refPortfolio={this.refSection.refPortfolio}
           />
           <Certificate
             isLandingPage
-            data={this.state.data.landingPage.certificates}
+            data={page.certificates}
             refCertificate={this.refSection.refCertificate}
             showModal={this.onShowModalHandler}
           />

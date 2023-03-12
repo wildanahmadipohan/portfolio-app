@@ -47,7 +47,7 @@ const Hero = (props) => {
                 <Button type='button' className='btn me-2' hasShadow isPrimary onClick={showMeNow}>
                   Show Me Now
                 </Button>
-                <Button type='link' href='#' isExternal className='btn btn-secondary'>
+                <Button type='link' href='mailto:wildanahmadipohan@gmail.com' isExternal className='btn btn-secondary'>
                   Contact Me &#10132;
                 </Button>
               </div>

@@ -3,8 +3,7 @@ import React from 'react';
 import IconText from './IconText';
 import Button from 'elements/Button';
 
-import IconFb from 'assets/images/ic_fb.svg';
-import IconIg from 'assets/images/ic_ig.svg';
+import IconGit from 'assets/images/ic_git.svg';
 import IconIn from 'assets/images/ic_in.svg';
 
 const Footer = (props) => {
@@ -15,13 +14,10 @@ const Footer = (props) => {
           <div className='py-4 text-center text-md-start'>
             <IconText />
             <div className='sosmed pt-2'>
-              <Button type='link' href='https://www.facebook.com/wildanahmadipohan' isExternal>
-                <img src={IconFb} alt='Facebook' />
+              <Button type='link' href='https://github.com/wildanahmadipohan' isExternal target='_blank'>
+                <img src={IconGit} alt='Github' />
               </Button>
-              <Button type='link' href='https://www.instagram.com/wildanahmadipohan' isExternal>
-                <img src={IconIg} alt='Instagram' />
-              </Button>
-              <Button type='link' href='https://www.linkedin.com/wildanahmadipohan' isExternal>
+              <Button type='link' href='https://www.linkedin.com/in/wildan-ahmadi-pohan' isExternal target='_blank'>
                 <img src={IconIn} alt='LinkedIn' />
               </Button>
             </div>

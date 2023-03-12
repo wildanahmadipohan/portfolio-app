@@ -1,50 +1,64 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchProjectDetailPage } from 'features/projectDetailPageSlice';
 
 import Breadcrumb from 'elements/Breadcrumb';
 import Footer from 'parts/Footer';
 import Header from 'parts/Header';
 import ProjectDetailTitle from 'parts/ProjectDetailTitle';
-
-import dataJson from 'data/data.json';
 import ProjectDetailImages from 'parts/ProjectDetailImages';
 import ProjectDetailDesc from 'parts/ProjectDetailDesc';
+import Loading from 'parts/Loading';
 
-export default class ProjectDetailPage extends Component {
-  constructor(props) {
-    super(props);
+const ProjectDetailPage = (props) => {
+  const slug = useParams();
+  const dispatch = useDispatch();
+  
+  const {status, project} = useSelector((state) => state.projectDetailPage);
 
-    this.state = {
-      project: dataJson.WAPSite
-    };
+  const breadcrumbList = [
+    {pageTitle: 'Home', pageHref: '/'},
+    {pageTitle: 'Projects', pageHref: '/projects'},
+    {pageTitle: 'Detail', pageHref: '#'}
+  ];
 
-    this.breadcrumbList = [
-      {pageTitle: 'Home', pageHref: '/'},
-      {pageTitle: 'Projects', pageHref: '/projects'},
-      {pageTitle: 'Detail', pageHref: '#'}
-    ];
-  }
-
-  componentDidMount() {
+  useEffect(() => {
     document.title = 'WAPSite | Project Detail';
     setTimeout(() => {
       window.scrollTo(0, 0);
     });
+  });
+
+  useEffect(() => {
+    dispatch(fetchProjectDetailPage(slug.slug));
+  }, [dispatch, slug.slug]);
+
+  if (status === 'loading') {
+    return (<Loading />)
   }
 
-  render() {
+  if (status === 'succeeded') {
     return (
       <>
         <Header isCentered/>
         <div className="content" style={{minHeight: '100vh'}}>
           <div className="container pt-md-5" style={{marginTop: 60}}>
-            <Breadcrumb data={this.breadcrumbList} />
+            <Breadcrumb data={breadcrumbList} />
           </div>
-          <ProjectDetailTitle data={this.state.project} />
-          <ProjectDetailImages data={this.state.project.images} />
-          <ProjectDetailDesc desc={this.state.project.desc} stacks={this.state.project.stacks} />
+          <ProjectDetailTitle data={project} />
+          <ProjectDetailImages data={project.images} />
+          <ProjectDetailDesc desc={project.desc} stacks={project.stacks} />
         </div>
         <Footer />
       </>
     )
   }
+  
+  if (status === 'failed') {
+    return (<h1>Error</h1>)
+  }
 }
+
+export default ProjectDetailPage;

@@ -10,7 +10,7 @@ export default function ProjectDetailTitle({data}) {
             <h1 className="h2">{data.title}</h1>
             <p className="text-muted">
               {
-                data.categories.map((item) => item.toUpperCase()).join(' | ')
+                data.tag.map((item) => item.toUpperCase()).join(' | ')
               }
             </p>
           </div>

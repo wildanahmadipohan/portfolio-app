@@ -39,7 +39,7 @@ const Ability = (props) => {
         <h4 className='section-title text-center text-md-start'>Ability</h4>
         {/* <Fade direction='up' delay={300 * index} fraction={0} triggerOnce> */}
         <div className='mt-5'>
-          <Carousel show={(width < 768) ? (1.5) : (width < 992) ? (3.5) : (width >= 992) ? (5.5) : (6.5)} slide={2} transition={0.5} dynamic={true} infinite={true} swiping={true} rightArrow={<ArrowCarousel direction='right' />} leftArrow={<ArrowCarousel direction='left' />}>
+          <Carousel show={(width < 768) ? (2) : (width < 992) ? (3.5) : (width >= 992) ? (5.5) : (6.5)} slide={2} transition={0.5} dynamic={true} infinite={true} swiping={true} rightArrow={<ArrowCarousel direction='right' />} leftArrow={<ArrowCarousel direction='left' />}>
             {abilities.map((item, index) => (
               <div className='col' key={`ability-${index}`}>
                   <div className='card ability-item p-3 d-flex justify-content-between align-items-center'>
