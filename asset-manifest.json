@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wapsite/static/css/main.4e8c5df6.css",
-    "main.js": "/wapsite/static/js/main.5a1173e2.js",
+    "main.js": "/wapsite/static/js/main.edaf4420.js",
     "static/js/787.30237536.chunk.js": "/wapsite/static/js/787.30237536.chunk.js",
     "static/media/wap-logo.png": "/wapsite/static/media/wap-logo.f7bf35816a7c329f9a5b.png",
     "static/media/img-hero-frame-2.png": "/wapsite/static/media/img-hero-frame-2.7117cc7f045f62211a53.png",
@@ -15,11 +15,11 @@
     "static/media/ic_home.svg": "/wapsite/static/media/ic_home.cc88a082eaa72ecd698519585424133c.svg",
     "index.html": "/wapsite/index.html",
     "main.4e8c5df6.css.map": "/wapsite/static/css/main.4e8c5df6.css.map",
-    "main.5a1173e2.js.map": "/wapsite/static/js/main.5a1173e2.js.map",
+    "main.edaf4420.js.map": "/wapsite/static/js/main.edaf4420.js.map",
     "787.30237536.chunk.js.map": "/wapsite/static/js/787.30237536.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e8c5df6.css",
-    "static/js/main.5a1173e2.js"
+    "static/js/main.edaf4420.js"
   ]
 }
