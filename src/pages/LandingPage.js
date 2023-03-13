@@ -55,6 +55,7 @@ class LandingPage extends Component {
 
   render() {
     const { page, status } = this.props;
+    const base_url = process.env.REACT_APP_API_HOST;
 
     let content;
 
@@ -90,7 +91,7 @@ class LandingPage extends Component {
             showModal={this.onShowModalHandler}
           />
           <MyModal show={this.state.show} handleClose={this.onHideModalHandler}>
-            <img src={this.state.itemModal.imageUrl} alt={`certificate`} style={{ width: '100%'}} />
+            <img src={`${base_url}/${this.state.itemModal.imageUrl}`} alt={`certificate`} style={{ width: '100%'}} />
           </MyModal>
           <Footer />
         </>

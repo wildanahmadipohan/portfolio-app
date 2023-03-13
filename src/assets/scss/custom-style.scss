@@ -15,48 +15,12 @@ body {
 .btn-secondary {
   background: none;
   color: #152c5b;
+  border: 2px solid #152c5b;
   border-radius: 50rem;
-  position: relative;
-  box-sizing: border-box;
-
-  $border: 2px;
-  background: #f5f7f9;
-  background-clip: padding-box;
-  border: solid $border transparent;
-  border-radius: 50rem;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -1;
-    margin: -$border;
-    border-radius: inherit;
-    background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
-  }
-
-  &::before:hover {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -1;
-    margin: -$border;
-    border-radius: inherit;
-    background: linear-gradient(90deg, #2A4BDE 0%, rgba(110, 42, 222, 0.74) 58.25%, rgba(175, 42, 222, 0.68) 104.52%);
-  }
 
   &:hover {
-    background: none;
-    color: #152c5b;
-    border-radius: 50rem;
-    position: relative;
-    box-sizing: border-box;
-
-    $border: 2px;
-    background: #f5f7f9;
-    background-clip: padding-box;
-    border: solid $border transparent;
-    border-radius: 50rem;
+    background-color: #152c5b;
+    color: #fff;
   }
 }
 

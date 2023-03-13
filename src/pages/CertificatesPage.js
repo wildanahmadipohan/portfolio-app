@@ -50,6 +50,7 @@ class CertificatesPage extends Component {
 
   render() {
     const { certificates, status } = this.props;
+    const base_url = process.env.REACT_APP_API_HOST;
 
     if (status === 'loading') {
       return (<Loading />)
@@ -66,7 +67,7 @@ class CertificatesPage extends Component {
             <Certificate data={certificates} showModal={this.onShowModalHandler} />
           </div>
           <MyModal show={this.state.show} handleClose={this.onHideModalHandler}>
-            <img src={this.state.itemModal.imageUrl} alt='certificate' style={{width: '100%'}} />
+            <img src={`${base_url}/${this.state.itemModal.imageUrl}`} alt='certificate' style={{width: '100%'}} />
           </MyModal>
           <Footer />
         </>

@@ -46,7 +46,7 @@
         "slug": "smart-ta",
         "title": "Smart TA",
         "tag": ["desktop", "java", "skripsi"],
-        "thumbnail": "/images/projects/thumbnails/smart-ta.png"
+        "thumbnail": "/images/projects/thumbnails/smart-ta.PNG"
       },
       {
         "slug": "e-kwitansi",
@@ -61,21 +61,21 @@
         "organization": "Dicoding Indonesia",
         "date": "01 Agustus 2021",
         "credentialUrl": "https://www.dicoding.com/certificates/MRZMD5JDKZYQ",
-        "imageUrl": "/images/certificates/front-end-expert.png"
+        "imageUrl": "/images/certificates/front-end-expert.PNG"
       },
       {
         "name": "Belajar Fundamental Front-End Web Development",
         "organization": "Dicoding Indonesia",
         "date": "21 Agustus 2020",
         "credentialUrl": "https://www.dicoding.com/certificates/J1RXY520MXVM",
-        "imageUrl": "/images/certificates/front-end-fundamental.png"
+        "imageUrl": "/images/certificates/front-end-fundamental.PNG"
       },
       {
         "name": "Belajar Membuat Front-End Web untuk Pemula",
         "organization": "Dicoding Indonesia",
         "date": "27 Juli 2021",
         "credentialUrl": "https://www.dicoding.com/certificates/0LZ03GNM3Z65",
-        "imageUrl": "/images/certificates/front-end-pemula.png"
+        "imageUrl": "/images/certificates/front-end-pemula.PNG"
       }
     ]
   },
@@ -85,49 +85,49 @@
       "organization": "Dicoding Indonesia",
       "date": "01 Agustus 2021",
       "credentialUrl": "https://www.dicoding.com/certificates/MRZMD5JDKZYQ",
-      "imageUrl": "/images/certificates/front-end-expert.png"
+      "imageUrl": "/images/certificates/front-end-expert.PNG"
     },
     {
       "name": "Belajar Fundamental Front-End Web Development",
       "organization": "Dicoding Indonesia",
       "date": "21 Agustus 2020",
       "credentialUrl": "https://www.dicoding.com/certificates/J1RXY520MXVM",
-      "imageUrl": "/images/certificates/front-end-fundamental.png"
+      "imageUrl": "/images/certificates/front-end-fundamental.PNG"
     },
     {
       "name": "Belajar Membuat Front-End Web untuk Pemula",
       "organization": "Dicoding Indonesia",
       "date": "27 Juli 2021",
       "credentialUrl": "https://www.dicoding.com/certificates/0LZ03GNM3Z65",
-      "imageUrl": "/images/certificates/front-end-pemula.png"
+      "imageUrl": "/images/certificates/front-end-pemula.PNG"
     },
     {
       "name": "Belajar Dasar Pemrograman Web",
       "organization": "Dicoding Indonesia",
       "date": "28 Juli 2020",
       "credentialUrl": "https://www.dicoding.com/certificates/53XEE4EO0XRN",
-      "imageUrl": "/images/certificates/dasar-web.png"
+      "imageUrl": "/images/certificates/dasar-web.PNG"
     },
     {
       "name": "Belajar Dasar Pemrograman JavaScript",
       "organization": "Dicoding Indonesia",
       "date": "24 Mei 2021",
       "credentialUrl": "https://www.dicoding.com/certificates/NVP79ERRVZR0",
-      "imageUrl": "/images/certificates/dasar-javascript.png"
+      "imageUrl": "/images/certificates/dasar-javascript.PNG"
     },
     {
       "name": "Belajar Fundamental Aplikasi Back-End",
       "organization": "Dicoding Indonesia",
       "date": "19 Agustus 2021",
       "credentialUrl": "https://www.dicoding.com/certificates/98XWK25D9XM3",
-      "imageUrl": "/images/certificates/backend-fundamental.png"
+      "imageUrl": "/images/certificates/backend-fundamental.PNG"
     },
     {
       "name": "Belajar Membuat Aplikasi Back-End untuk Pemula",
       "organization": "Dicoding Indonesia",
       "date": "17 Mei 2021",
       "credentialUrl": "https://www.dicoding.com/certificates/MEPJ5087QP3V",
-      "imageUrl": "/images/certificates/backend-pemula.png"
+      "imageUrl": "/images/certificates/backend-pemula.PNG"
     }
   ],
   "projects": [
@@ -159,19 +159,19 @@
       "slug": "smart-ta",
       "title": "Smart TA",
       "tag": ["desktop", "java", "skripsi"],
-      "thumbnail": "/images/projects/thumbnails/wapsite.png",
+      "thumbnail": "/images/projects/thumbnails/wapsite.PNG",
       "images": [
         {
           "id": 1,
-          "url": "/images/projects/smart-ta/1.png"
+          "url": "/images/projects/smart-ta/1.PNG"
         },
         {
           "id": 2,
-          "url": "/images/projects/smart-ta/2.png"
+          "url": "/images/projects/smart-ta/2.PNG"
         },
         {
           "id": 3,
-          "url": "/images/projects/smart-ta/3.png"
+          "url": "/images/projects/smart-ta/3.PNG"
         }
       ],
       "desc": "<p>Aplikasi Smart TA merupakan aplikasi berbasis Desktop yang dibangun untuk mendeteksi kesalahan penulisan laporan Tugas Akhir mahasiswa Program Studi Sistem Informasi UIN SUSKA Riau.</p> <p>Aplikasi ini dapat menampilkan informasi jumlah dan lokasi kesalahan penulisan laporan Tugas Akhir tersebut.</p>",
