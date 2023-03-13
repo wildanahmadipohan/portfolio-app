@@ -15,7 +15,7 @@ const Certificate = (props) => {
           <h4 className='section-title text-center text-md-start mb-0'>Certificate</h4>
           {
             props.isLandingPage ? (
-              <Button className='btn btn-secondary px-4 d-none d-md-flex align-items-center justify-content-center' type='link' href='/certificates'>
+              <Button className='btn btn-secondary px-4 d-none d-md-flex align-items-center justify-content-center' type='link' href='/wapsite/certificates'>
                 More Certificate
               </Button>
             ) : ''
@@ -50,7 +50,7 @@ const Certificate = (props) => {
         {
           props.isLandingPage ? (
             <div className='d-flex align-items-center justify-content-center mt-3 d-md-none'>
-              <Button className='btn btn-secondary px-4 d-flex align-items-center justify-content-center' type='link' href='/certificates'>More Certificate</Button>
+              <Button className='btn btn-secondary px-4 d-flex align-items-center justify-content-center' type='link' href='/wapsite/certificates'>More Certificate</Button>
             </div>
           ) : ''
         }

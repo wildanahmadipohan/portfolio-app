@@ -15,7 +15,7 @@ export default function MyProjects(props) {
           <h4 className='section-title text-center align-self-center mb-0'>Portfolio</h4>
           {
             props.isLandingPage ? (
-              <Button type='link' href='/projects' className='btn btn-secondary d-none d-md-flex align-items-center justify-content-center'>More Portfolio</Button>
+              <Button type='link' href='/wapsite/projects' className='btn btn-secondary d-none d-md-flex align-items-center justify-content-center'>More Portfolio</Button>
             ) : ''
           }
         </div>
@@ -30,7 +30,7 @@ export default function MyProjects(props) {
                       {item.title}
                     </h5>
                     <p className='card-text'>{item.tag.map((n) => n.toUpperCase()).join(' | ')}</p>
-                    <Button type='link' className='btn btn-sm btn-primary' hasShadow href={`/project/${item.slug}`}>
+                    <Button type='link' className='btn btn-sm btn-primary' hasShadow href={`/wapsite/project/${item.slug}`}>
                       View Detail
                     </Button>
                   </div>
@@ -42,7 +42,7 @@ export default function MyProjects(props) {
         {
           props.isLandingPage ? (
             <div className='d-flex align-items-center justify-content-center mt-3 d-md-none'>
-              <Button className='btn btn-secondary d-flex align-items-center justify-content-center' type='link' href='/projects'>More Portfolio</Button>
+              <Button className='btn btn-secondary d-flex align-items-center justify-content-center' type='link' href='/wapsite/projects'>More Portfolio</Button>
             </div>
           ) : ''
         }
